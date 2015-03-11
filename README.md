@@ -18,7 +18,7 @@ Documentation will follow soon...
 
 
 [eventsourcing]: https://github.com/simple-es/event-sourcing
-[jmsserializer]: https://github.com/qandidate-labs/broadway
+[jmsserializer]: http://jmsyst.com/libs/serializer
 [f500]: https://github.com/f500
 [jaspernbrouwer]: https://github.com/jaspernbrouwer
 [license]: https://github.com/simple-es/jms-serializer-bridge/blob/master/LICENSE
