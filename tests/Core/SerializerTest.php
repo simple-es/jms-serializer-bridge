@@ -4,7 +4,7 @@
  * @license https://github.com/simple-es/jms-serializer-bridge/blob/master/LICENSE MIT
  */
 
-namespace SimpleES\JMSSerializerBridge\Test;
+namespace SimpleES\JMSSerializerBridge\Test\Core;
 
 use SimpleES\JMSSerializerBridge\Serializer\Serializer;
 

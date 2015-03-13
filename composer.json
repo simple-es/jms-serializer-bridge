@@ -14,16 +14,19 @@
 
   "require": {
     "php": ">=5.4",
-    "simple-es/event-sourcing": "dev-master",
+    "simple-es/event-sourcing": "~1.0@dev",
     "jms/serializer": "~0.11"
   },
-
   "require-dev": {
     "phpunit/phpunit": "~4.3",
     "squizlabs/php_codesniffer": "~2.1"
   },
+
   "autoload": {
     "psr-4": {"SimpleES\\JMSSerializerBridge\\": "src"}
+  },
+  "autoload-dev": {
+    "psr-4": {"SimpleES\\JMSSerializerBridge\\Test\\": "tests"}
   },
 
   "extra": {

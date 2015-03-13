@@ -7,7 +7,6 @@
 namespace SimpleES\JMSSerializerBridge\Serializer;
 
 use JMS\Serializer\SerializerInterface as JMSSerializer;
-use SimpleES\EventSourcing\Event\Resolver\ResolvesEventNames;
 use SimpleES\EventSourcing\Serializer\SerializesData;
 
 /**
