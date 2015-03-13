@@ -1,27 +1,34 @@
 {
-    "name": "simple-es/jms-serializer-bridge",
-    "description": "A bridge for using JMS Serializer for serialization",
-    "type": "library",
-    "keywords": ["simple", "simplees", "simple-es", "serializer", "serialization"],
-    "homepage": "https://github.com/simple-es/jms-serializer-bridge",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Jasper N. Brouwer",
-            "email": "jasper@future500.nl"
-        }
-    ],
-
-    "require": {
-        "php": ">=5.4",
-        "jms/serializer": "~0.11"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "~4.3",
-        "squizlabs/php_codesniffer": "~2.1"
-    },
-
-    "autoload": {
-        "psr-4" : { "SimpleES\\JMSSerializerBridge\\" : "src" }
+  "name": "simple-es/jms-serializer-bridge",
+  "description": "A bridge for using JMS Serializer for serialization",
+  "type": "library",
+  "keywords": ["simple", "simplees", "simple-es", "serializer", "serialization"],
+  "homepage": "https://github.com/simple-es/jms-serializer-bridge",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jasper N. Brouwer",
+      "email": "jasper@future500.nl"
     }
+  ],
+
+  "require": {
+    "php": ">=5.4",
+    "simple-es/event-sourcing": "dev-master",
+    "jms/serializer": "~0.11"
+  },
+
+  "require-dev": {
+    "phpunit/phpunit": "~4.3",
+    "squizlabs/php_codesniffer": "~2.1"
+  },
+  "autoload": {
+    "psr-4": {"SimpleES\\JMSSerializerBridge\\": "src"}
+  },
+
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
 }

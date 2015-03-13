@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "84b10674a1339e7ff1744ae12ffd3baa",
+    "hash": "4f53516e193e06bd42de58f96e404f39",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -383,6 +383,60 @@
                 "type"
             ],
             "time": "2014-01-09 22:37:17"
+        },
+        {
+            "name": "simple-es/event-sourcing",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/simple-es/event-sourcing.git",
+                "reference": "74bd16a511b149e491c6e7e3342b34b0b1ae91da"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/simple-es/event-sourcing/zipball/74bd16a511b149e491c6e7e3342b34b0b1ae91da",
+                "reference": "74bd16a511b149e491c6e7e3342b34b0b1ae91da",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.3",
+                "squizlabs/php_codesniffer": "~2.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SimpleES\\EventSourcing\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jasper N. Brouwer",
+                    "email": "jasper@future500.nl"
+                }
+            ],
+            "description": "A \"simple\" Event Sourcing library for PHP",
+            "homepage": "https://github.com/simple-es/event-sourcing",
+            "keywords": [
+                "Simple",
+                "event",
+                "event-sourcing",
+                "simple-es",
+                "simplees",
+                "sourcing"
+            ],
+            "time": "2015-03-13 09:37:52"
         }
     ],
     "packages-dev": [
@@ -1414,7 +1468,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "simple-es/event-sourcing": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
