@@ -8,6 +8,12 @@ Authored by [Jasper N. Brouwer][jaspernbrouwer].
 
 Under the collective flag of [Future500 B.V.][f500]
 
+## Installation
+
+```txt
+composer.phar require simple-es/jms-serializer-bridge ~1.0@dev
+```
+
 ## Usage
 
 Documentation will follow soon...
