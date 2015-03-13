@@ -13,7 +13,7 @@ use SimpleES\EventSourcing\Serializer\SerializesData;
  * @copyright Copyright (c) 2015 Future500 B.V.
  * @author    Jasper N. Brouwer <jasper@future500.nl>
  */
-class Serializer implements SerializesData
+final class Serializer implements SerializesData
 {
     /**
      * @var JMSSerializer
