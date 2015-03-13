@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/simple-es/jms-serializer-bridge.svg?branch=master)](https://travis-ci.org/simple-es/jms-serializer-bridge)
 
-A bridge for using [JMS Serializer][jmsserializer] for serialization with [SimpleES \ EventSourcing][eventsourcing].
+A bridge for using [JMS Serializer][jmsserializer] to (de)serialize data in [SimpleES \ EventSourcing][eventsourcing].
 
 Authored by [Jasper N. Brouwer][jaspernbrouwer].
 

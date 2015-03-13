@@ -1,6 +1,6 @@
 {
   "name": "simple-es/jms-serializer-bridge",
-  "description": "A bridge for using JMS Serializer for serialization",
+  "description": "A bridge for using JMS Serializer to (de)serialize data",
   "type": "library",
   "keywords": ["simple", "simplees", "simple-es", "serializer", "serialization"],
   "homepage": "https://github.com/simple-es/jms-serializer-bridge",

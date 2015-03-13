@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c97b4631d04118c17b16afcfa880dc74",
+    "hash": "24e668ae531493d55d2262b5e8adb09a",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -390,12 +390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/simple-es/event-sourcing.git",
-                "reference": "74bd16a511b149e491c6e7e3342b34b0b1ae91da"
+                "reference": "003b393fcd230f1b748050c8e4a3ed9b58a696ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simple-es/event-sourcing/zipball/74bd16a511b149e491c6e7e3342b34b0b1ae91da",
-                "reference": "74bd16a511b149e491c6e7e3342b34b0b1ae91da",
+                "url": "https://api.github.com/repos/simple-es/event-sourcing/zipball/003b393fcd230f1b748050c8e4a3ed9b58a696ef",
+                "reference": "003b393fcd230f1b748050c8e4a3ed9b58a696ef",
                 "shasum": ""
             },
             "require": {
@@ -436,7 +436,7 @@
                 "simplees",
                 "sourcing"
             ],
-            "time": "2015-03-13 09:37:52"
+            "time": "2015-03-13 20:54:38"
         }
     ],
     "packages-dev": [
