@@ -20,13 +20,13 @@ class SerializerTest extends \PHPUnit_Framework_TestCase
     private $serializer;
 
     /**
-     * @var \PHPUnit_Framework_MockObject_MockObject
+     * @var \Mockery\MockInterface
      */
     private $jmsSerializer;
 
     public function setUp()
     {
-        $this->jmsSerializer = $this->getMock('JMS\Serializer\SerializerInterface');
+        $this->jmsSerializer = \Mockery::mock('JMS\Serializer\SerializerInterface');
 
         $this->serializer = new Serializer($this->jmsSerializer, 'json');
     }
@@ -46,10 +46,10 @@ class SerializerTest extends \PHPUnit_Framework_TestCase
         $string = '{"some_key": "Some value"}';
 
         $this->jmsSerializer
-            ->expects($this->once())
-            ->method('serialize')
+            ->shouldReceive('serialize')
+            ->once()
             ->with($object, 'json')
-            ->will($this->returnValue($string));
+            ->andReturn($string);
 
         $serializedObject = $this->serializer->serialize($object);
 
@@ -65,10 +65,10 @@ class SerializerTest extends \PHPUnit_Framework_TestCase
         $object = new \stdClass();
 
         $this->jmsSerializer
-            ->expects($this->once())
-            ->method('deserialize')
-            ->with($string, 'stdClass')
-            ->will($this->returnValue($object));
+            ->shouldReceive('deserialize')
+            ->once()
+            ->with($string, 'stdClass', 'json')
+            ->andReturn($object);
 
         $deserializedObject = $this->serializer->deserialize($string, 'stdClass');
 

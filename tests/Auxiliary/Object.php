@@ -63,7 +63,7 @@ final class Object
      * @param array  $array
      * @param object $object
      */
-    function __construct($boolean, $integer, $float, $string, array $array, $object)
+    public function __construct($boolean, $integer, $float, $string, array $array, $object)
     {
         $this->null    = null;
         $this->boolean = $boolean;
